@@ -1,2 +1,2 @@
 # html-css-js-projects
-A collection of all my html, css and javascript projects.
+A repository for all my HTML, CSS and JavaScript projects
