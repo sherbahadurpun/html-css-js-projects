@@ -1,0 +1,147 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #764af1;
+  color: #764af1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 35rem;
+  height: min-content;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.container h1,
+label {
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
+}
+
+.container label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 25rem;
+  padding: 1rem;
+  border: 2px solid #764af1;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]::placeholder {
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.btns {
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-style: none;
+}
+
+.btn_generate {
+  background: #764af1;
+  color: #ffffff;
+}
+
+.btn_generate:hover {
+  background: rgba(118, 74, 241, 0.9);
+}
+
+.btn_copy {
+  padding: 0.7rem 2.7rem;
+  border: 2px solid #764af1;
+}
+
+.btn_copy:hover {
+  color: #764af1;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .container {
+    width: 25rem;
+  }
+
+  .container h1 {
+    font-size: 1.3rem;
+  }
+
+  input[type="text"] {
+    width: 15rem;
+  }
+
+  input[type="text"]::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .btns {
+    width: 14rem;
+  }
+
+  button {
+    padding: 0.6rem 1.4rem;
+  }
+
+  .btn_copy {
+    padding: 0.5rem 1.4rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .container {
+    width: 22rem;
+  }
+
+  .container h1 {
+    font-size: 1.2rem;
+  }
+
+  .btns {
+    width: 14rem;
+  }
+
+  button {
+    padding: 0.6rem 1.4rem;
+  }
+
+  .btn_copy {
+    padding: 0.5rem 1.4rem;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Author: DevSathi(www.devsathi.com) -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Password Generator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Secure Password Generator</h1>
+      <div>
+        <input
+          type="text"
+          value=""
+          id="input_password"
+          placeholder="Your new password will appear here."
+        />
+      </div>
+      <label for="plength">Password Length</label>
+      <select name="password_length" id="pws_length">
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+      </select>
+      <div class="btns">
+        <button class="btn_generate" id="btn_generate">Generate</button>
+        <button class="btn_copy" id="btn_copy">Copy</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
